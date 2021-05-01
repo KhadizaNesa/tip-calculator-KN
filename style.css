@@ -1,0 +1,53 @@
+html, body, .container-fluid {
+    width: 100%;
+    height: 100%;
+}
+
+.white{
+    width: 50px;
+    height: .5em;
+    border: 0; border-top: 1px solid #f8f6f6;
+}
+
+.container-fluid,
+.overlay:before {
+    background: url("images/cafe.jpg") no-repeat fixed 0 0 / cover;
+}
+
+.card {
+    color: rgb(39, 35, 35);
+}
+
+.container-fluid {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.overlay {
+    margin: 0 auto;
+    max-width: 768px;
+    overflow: hidden;
+    padding: 50px;
+    color: white;
+    position: relative;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    z-index: 0;
+    font-weight: bold;
+}
+
+.overlay:before {
+    content: '';
+    filter: blur(50px);
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+#bill-card {
+    display: none;
+}
